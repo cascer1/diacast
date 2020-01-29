@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "001 - Pumps can't swim"
+permalink: "/episodes/001"
 date: "2017-06-24"
 file: "https://media.blubrry.com/dia_cast/i.eliens.co/diacast/001/1.mp3"
 excerpt_separator: <!--more-->
