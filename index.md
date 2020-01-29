@@ -2,7 +2,11 @@
 
 {% for post in site.posts %}
 
-{{post}}
+### [{{post.title}}]({{post.url}})
+
+{{post.summary}}
+
+{{post.content}}
 
 ---
 {% endfor %}
