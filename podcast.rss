@@ -20,7 +20,7 @@
       <url>{{ site.url }}/images/itunes.png</url>
       <title>{{ site.title }}</title>
     </image>
-    <itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
+    <itunes:subtitle>{{ site.subtitle | xml_escape }}</itunes:subtitle>
     <itunes:author>Adi Barilan, Brent Holtevert, Cas Eliëns</itunes:author>
     <itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
     <itunes:keywords>{{ site.keywords }}</itunes:keywords>
