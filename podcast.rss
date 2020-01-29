@@ -43,7 +43,10 @@
         <description>{{ post.excerpt | xml_escape }}</description>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
         <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/>
+        <itunes:title>{{ post.itunes_title }}</itunes:title>
         <itunes:author>{{ post.author | xml_esape }}</itunes:author>
+        <itunes:season>{{post.season}}</itunes:season>
+        <itunes:episode>{{post.episode}}</itunes:episode>
         <itunes:subtitle>{{ post.subtitle | xml_escape }}</itunes:subtitle>
         <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
         <itunes:duration>{{ post.duration }}</itunes:duration>
