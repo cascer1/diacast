@@ -537,8 +537,7 @@ a:hover {
   color: #CAE2FF;
   text-align: center;
   background-image: url('/images/header.png');
-  background-color: #5C89C7;
-  /* background-image: linear-gradient(120deg, #155799, #5C89C7) */
+  background-size: 100%;
 }
 
 @media screen and (min-width: 64em) {
