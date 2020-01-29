@@ -14,8 +14,6 @@ explicit: "no"
 block: "no" #means is shown in itunes
 ---
 
-# Pumps Can't swim
-
 **[Discuss this episode on Reddit](https://www.reddit.com/r/diabetes/comments/6j904n/diacast_001_pumps_cant_swim/)**  
 [Support us on Patreon](https://patreon.com/diacast)  
 [Join us on Discord](https://discord.gg/diabetes)
