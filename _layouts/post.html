@@ -20,8 +20,9 @@
       <a href="{{site.url | relative_url}}">&laquo; Home</a>
       <hr />
 
-      <audio>
-        <source src="{{page.file}}" type="audio/mpeg" draggable="false"  class="audioplayer" />
+      <audio controls>
+        <source src="{{page.file}}" type="audio/mpeg" draggable="false"  class="audioplayer">
+          Your browser is unable to show the media player.
       </audio>
 
       {{ content }}
