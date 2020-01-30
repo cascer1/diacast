@@ -44,7 +44,7 @@
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
         <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mpeg"/>
         <media:content url="{{ post.file }}" length="{{ post.length }}" type="audio/mpeg" isDefault="true" medium="audio">
-          <media:title type="plain">{{ post.title }}</media:title>
+          <media:title type="plain">{{ post.itunes_title }}</media:title>
         </media:content>
         <itunes:title>{{ post.itunes_title }}</itunes:title>
         <itunes:author>{{ post.author | xml_esape }}</itunes:author>
