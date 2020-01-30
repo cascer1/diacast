@@ -826,7 +826,7 @@ a:hover {
   border-left-width: thin;
 }
 
-.footer-links ul li :first-of-type {
+.footer-links ul:first-child {
   border: none;
 }
 
