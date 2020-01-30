@@ -4,7 +4,7 @@ theme: jekyll-theme-cayman
 title:          Diacast
 email:          hello@diacast.xyz
 subtitle:       "A podcast about diabetes"
-description:    "Diacast is a podcast about diabetes, in the widest sense of the word. We talk about technology, recipes, daily life, success stories, and a whole lot more. Sometimes we wander off to subjects that are unrelated to diabetes, because that's how conversations work."
+description:    "Diacast is a podcast about diabetes, in the widest sense of the word. We talk about technology, recipes, daily life, success stories, and a whole lot more. Sometimes we wander off to subjects that are unrelated to diabetes, too."
 subtitle:       "A podcast about diabetes"
 url:            "https://test.diacast.xyz"
 lang:           en-US
