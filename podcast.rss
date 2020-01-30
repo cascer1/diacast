@@ -29,7 +29,9 @@
       <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{ site.url }}/images/itunes.png"/>
-    <itunes:category text="Health" />
+    <itunes:category text="Health &amp; Fitness" >
+      <itunes:category text="Medicine" />
+    </itunes:category>
     <itunes:category text="News"/>
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
