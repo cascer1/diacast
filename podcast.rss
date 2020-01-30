@@ -29,11 +29,8 @@
       <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{ site.url }}/images/itunes.png"/>
-    <itunes:category text="Health">
-      <itunes:category text="Self-Help"/>
-    </itunes:category>
-    <itunes:category text="News &amp; Politics"/>
-    <itunes:category text="Science &amp; Medicine"/>
+    <itunes:category text="Health" />
+    <itunes:category text="News"/>
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
       <item>
@@ -42,7 +39,7 @@
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <description>{{ post.excerpt | xml_escape }}</description>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-        <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mp3"/>
+        <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mpeg"/>
         <itunes:title>{{ post.itunes_title }}</itunes:title>
         <itunes:author>{{ post.author | xml_esape }}</itunes:author>
         <itunes:season>{{post.season}}</itunes:season>
