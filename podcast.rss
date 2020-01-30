@@ -37,7 +37,8 @@
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <description>{{ post.excerpt | xml_escape }}</description>
+        <description>{{ post.content | xml_escape }}</description>
+        <content:encoded> {{ post.content | xml_escape }}</description>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
         <enclosure url="{{ post.file }}" length="{{ post.length }}" type="audio/mpeg"/>
         <itunes:title>{{ post.itunes_title }}</itunes:title>

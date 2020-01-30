@@ -19,7 +19,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Adi, Brent, and Cas"
+      author: "Cas Eliëns"
       excerpt_separator: <!--more-->
       explicit: "no"
       block: "no"
