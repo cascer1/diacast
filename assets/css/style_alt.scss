@@ -833,3 +833,7 @@ a:hover {
 .footer-links ul li a {
   padding: .2em 1em;
 }
+
+.footer-links>ul>li:first-of-type>a {
+  padding-left: 0px;
+}
