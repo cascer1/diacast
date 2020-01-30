@@ -813,12 +813,21 @@ a:hover {
   color: #819198
 }
 
+// Modifications by Cas
+
 .footer-links {
 
 }
 
 .footer-links ul li {
   display: inline;
+  border-left-color: lightgrey;
+  border-left-style: solid;
+  border-left-width: thin;
+}
+
+.footer-links ul li :first-of-type {
+  border: none;
 }
 
 .footer-links ul li a {
