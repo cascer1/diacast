@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style_alt.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style_post.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <header class="post-header" role="banner">
-      <h1 class="post-title">{{ page.title  }}</h1>
-      <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-    </header>
+<head>
+  <meta charset="UTF-8">
 
-    <main id="content" class="main-content" role="main">
-      <a href="{{site.url | relative_url}}">&laquo; Home</a>
+  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style_alt.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style_post.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+  <header class="post-header" role="banner">
+    <h1 class="post-title">{{ page.title  }}</h1>
+    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    <a href="{{site.url | relative_url}}">&laquo; Home</a>
+    <hr />
+
+    <p>
+      <audio controls>
+        <source src="{{page.file}}" type="audio/mpeg" draggable="false" class="audioplayer">
+        Your browser is unable to show the media player.
+      </audio>
+    </p>
+    <p>
+      {{page.summary}}
+    </p>
+    <p>
+      {{ content }}
+    </p>
+    <footer class="site-footer">
+
+      <div class="post-links">
+        {% if page.previous %}
+        <a href="{{site.url}}{{page.previous.url}}" class="previous-link">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next %}
+        <a href="{{site.url}}{{page.next.url}}" class="next-link">{{page.next.title}} &raquo;</a>
+        {% endif %}
+      </div>
       <hr />
 
-<p>
-      <audio controls>
-        <source src="{{page.file}}" type="audio/mpeg" draggable="false"  class="audioplayer">
-          Your browser is unable to show the media player.
-      </audio>
-</p>
-<p>
-      {{page.summary}}
-</p>
-<p>
-      {{ content }}
-</p>
-      <footer class="site-footer">
+      {{site.description}}
 
-        <div class="post-links">
-          {% if page.previous %}
-            <a href="{{site.url}}{{page.previous.url}}" class="previous-link">&laquo; {{page.previous.title}}</a>
-          {% endif %}
-          {% if page.next %}
-            <a href="{{site.url}}{{page.next.url}}" class="next-link">{{page.next.title}} &raquo;</a>
-          {% endif %}
-        </div>
-        <hr />
+      <div class="footer-links">
+        <ul>
+          <li><a href="/podcast.rss">RSS</a></li>
+          <li><a href="https://patreon.com/diacast">Patreon</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</body>
 
-        {{site.description}}
-
-        <div class="footer-links">
-            <ul>
-              <li><a href="/podcast.rss">RSS</a></li>
-              <li><a href="https://patreon.com/diacast">Patreon</a></li>
-            </ul>
-        </div>
-      </footer>
-    </main>
-  </body>
 </html>
