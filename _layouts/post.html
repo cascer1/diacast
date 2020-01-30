@@ -26,6 +26,16 @@
       {{ content }}
 
       <footer class="site-footer">
+
+          {% if page.previous %}
+            <a href="{{page.previous}}" class="previous_link">&laquo; Previous</a>
+          {% endif %}
+          {% if page.next %}
+            <a href="{{page.next}}" class="next_link">&raquo; Next</a>
+          {% endif %}
+
+        <hr />
+
         {{site.description}}
       </footer>
     </main>
