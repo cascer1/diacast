@@ -826,8 +826,8 @@ a:hover {
   border-left-width: thin;
 }
 
-.footer-links>ul>li:first {
-  border-left-style: none;
+.footer-links>ul:first-child {
+  border-left-style: none !important;
 }
 
 .footer-links ul li a {
