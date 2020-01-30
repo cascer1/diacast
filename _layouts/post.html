@@ -39,6 +39,8 @@
       <div class="post-links">
         {% if page.previous %}
         <a href="{{site.url}}{{page.previous.url}}" class="previous-link">&laquo; {{page.previous.title}}</a>
+        {% else %}
+        &nbsp; <!-- stupid hidden space so the right float doesn't break -->
         {% endif %}
         {% if page.next %}
         <a href="{{site.url}}{{page.next.url}}" class="next-link">{{page.next.title}} &raquo;</a>
@@ -57,5 +59,5 @@
     </footer>
   </main>
 </body>
-
+<!-- <3 -->
 </html>
