@@ -28,10 +28,10 @@
       <footer class="site-footer">
 
           {% if page.previous %}
-            <a href="{{page.previous}}" class="previous_link">&laquo; Previous</a>
+            <a href="{{site.url}}{{page.previous.url}}" class="previous_link">&laquo; {{page.previous.title}}</a>
           {% endif %}
           {% if page.next %}
-            <a href="{{page.next}}" class="next_link">&raquo; Next</a>
+            <a href="{{site.url}}{{page.next.url}}" class="next_link">&raquo; {{page.next.title}}</a>
           {% endif %}
 
         <hr />
