@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style_alt.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style_post.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title  }}</h1>
-      <h2 class="project-tagline">{{ page.subtitle }}</h2>
+    <header class="post-header" role="banner">
+      <h1 class="post-title">{{ page.title  }}</h1>
+      <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -31,7 +32,7 @@
             <a href="{{site.url}}{{page.previous.url}}" class="previous_link">&laquo; {{page.previous.title}}</a>
           {% endif %}
           {% if page.next %}
-            <a href="{{site.url}}{{page.next.url}}" class="next_link">&raquo; {{page.next.title}}</a>
+            <a href="{{site.url}}{{page.next.url}}" class="next_link">{{page.next.title}} &raquo;</a>
           {% endif %}
 
         <hr />
