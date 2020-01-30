@@ -834,6 +834,10 @@ a:hover {
   border-left-style: none !important;
 }
 
+.footer-links ul li :first-of-type {
+  border-left-style: none !important;
+}
+
 .footer-links ul li a {
   padding: .2em 1em;
 }
