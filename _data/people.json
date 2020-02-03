@@ -1,25 +1,23 @@
-{
-  "people": [
-    {
-      "name": "Adi",
-      "devices": [
-        "Omnipod", "Dexcom G5", "AndroidAPS"
-      ],
-      "description": "I do autonomous robots for the army"
-    },
-    {
-      "name": "Brent",
-      "devices": [
-        "Medtronic 552", "Dexcom G6", "OpenAPS"
-      ],
-      "description": "smae"
-    },
-    {
-      "name": "Cas",
-      "devices": [
-        "Accu-Chek Combo", "Dexcom G6", "AndroidAPS"
-      ],
-      "description": "I like tinkering with diabetes tech and writing software"
-    }
-  ]
-}
+[
+  {
+    "name": "Adi",
+    "devices": [
+      "Omnipod", "Dexcom G5", "AndroidAPS"
+    ],
+    "description": "I do autonomous robots for the army"
+  },
+  {
+    "name": "Brent",
+    "devices": [
+      "Medtronic 552", "Dexcom G6", "OpenAPS"
+    ],
+    "description": "smae"
+  },
+  {
+    "name": "Cas",
+    "devices": [
+      "Accu-Chek Combo", "Dexcom G6", "AndroidAPS"
+    ],
+    "description": "I like tinkering with diabetes tech and writing software"
+  }
+]
