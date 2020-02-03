@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Episodes",
+    "link": "/",
+    "bottomlink": true,
+    "toplink": true
+  },
+  {
+    "name": "About",
+    "link": "/about",
+    "bottomlink": true,
+    "toplink": true
+  },
+  {
+    "name": "RSS",
+    "link": "/podcast.rss",
+    "bottomlink": true,
+    "toplink": false
+  },
+  {
+    "name": "Patreon",
+    "link": "https://patreon.com/diacast",
+    "bottomlink": true,
+    "toplink": true
+  }
+]
