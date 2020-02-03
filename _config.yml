@@ -11,6 +11,8 @@ lang:           en-US
 author:         "Cas Eliëns"
 copyright:      "&#x2117; &amp; &#xA9; 2020"
 
+collections:
+  - people
 
 defaults:
   -
