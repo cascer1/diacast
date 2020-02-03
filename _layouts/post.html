@@ -57,7 +57,9 @@
       <div class="footer-links">
         <ul>
           {% for page in site.pages %}
+          {% if page.bottomlink %}
           <li><a href="{{page.url}}">{{page.title}}</a></li>
+          {% endif %}
           {% endfor %}
           <li><a href="https://patreon.com/diacast">Patreon</a></li>
         </ul>
