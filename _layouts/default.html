@@ -26,8 +26,11 @@
 
         <div class="footer-links">
             <ul>
-              <li><a href="/podcast.rss">RSS</a></li>
-              <li><a href="https://patreon.com/diacast">Patreon</a></li>
+              {% for page in site.data.links %}
+              {% if page.bottomlink %}
+              <li><a href="{{page.link}}">{{page.name}}</a></li>
+              {% endif %}
+              {% endfor %}
             </ul>
         </div>
       </footer>
