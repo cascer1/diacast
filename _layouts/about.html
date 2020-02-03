@@ -21,6 +21,16 @@
     <main id="content" class="main-content" role="main">
       {% for member in site.data.members %}
 
+      <h3>{{member.name}}</h3>
+
+      <ul>
+        {% for device in member.devices %}
+        <li>{{device}}</li>
+        {% endfor %}
+      </ul>
+
+      <p>{{member.description}}</p>
+
       {% endfor %}
 
       <footer class="site-footer">
