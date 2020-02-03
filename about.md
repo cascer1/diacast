@@ -1,5 +1,5 @@
 ---
-template: about
+
 ---
 
 ## About
