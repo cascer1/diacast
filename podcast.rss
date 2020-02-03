@@ -35,7 +35,7 @@
     </itunes:category>
     <itunes:category text="News"/>
     <itunes:explicit>no</itunes:explicit>
-    {% for post in site.posts %}
+    {% for post in site.categories.episodes %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
