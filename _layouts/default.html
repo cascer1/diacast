@@ -16,6 +16,15 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <span class="top-menu">
+        <ul>
+          {% for page in site.data.links %}
+          {% if page.toplink %}
+          <li><a href="{{page.link}}">{{page.name}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </span>
     </header>
 
     <main id="content" class="main-content" role="main">
