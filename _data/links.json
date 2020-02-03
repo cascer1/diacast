@@ -1,23 +1,19 @@
----
-
----
-
 [
   {
     "name": "Episodes",
-    "link": "{% link /index.md %}",
+    "link": "/",
     "bottomlink": true,
     "toplink": true
   },
   {
     "name": "About",
-    "link": "{% link /about.md %}",
+    "link": "/about",
     "bottomlink": true,
     "toplink": true
   },
   {
     "name": "RSS",
-    "link": "{% link /podcast.rss %}",
+    "link": "/podcast.rss",
     "bottomlink": true,
     "toplink": false
   },
