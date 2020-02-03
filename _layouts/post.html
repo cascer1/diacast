@@ -56,6 +56,9 @@
 
       <div class="footer-links">
         <ul>
+          {% for page in site.pages %}
+          <li><a href="{{page.url}}">{{page.title}}</a></li>
+          {%endfor}
           <li><a href="/podcast.rss">RSS</a></li>
           <li><a href="https://patreon.com/diacast">Patreon</a></li>
         </ul>

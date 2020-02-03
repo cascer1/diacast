@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 ## Episodes
 
 {% for post in site.categories.episodes %}
