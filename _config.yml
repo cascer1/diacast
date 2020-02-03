@@ -15,7 +15,7 @@ copyright:      "&#x2117; &amp; &#xA9; 2020"
 defaults:
   -
     scope:
-      path: "episodes"
+      path: "_posts/episodes"
       type: "posts"
     values:
       layout: "post"
