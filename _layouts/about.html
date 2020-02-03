@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style_alt.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to the Diacast" href="{{site.url}}/podcast.rss" />
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101234212);</script>
+    <script async src="//static.getclicky.com/js"></script>
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {% for member in site.data.members %}
+
+      {% endfor %}
+
+      <footer class="site-footer">
+        {{site.description}}
+
+        <div class="footer-links">
+            <ul>
+              <li><a href="/podcast.rss">RSS</a></li>
+              <li><a href="https://patreon.com/diacast">Patreon</a></li>
+            </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
