@@ -1,0 +1,145 @@
+{% include head.html %}
+
+<body itemscope itemtype="http://schema.org/WebSite">
+	{% include navigation.html %}
+
+		<!-- ===== MAIN ===== -->
+		<main id="main" class="main">
+
+			<!-- ===== PAGE HEADER ===== -->
+			<header class="page-header-podcast" style="background-image: url('/assets/img/diacast/4Kpattern.png')">
+				<div class="page-header-inner">
+					<div class="container">
+
+						<!-- ===== BREADCRUMB ===== -->
+						<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+							<li itemprop="itemListElement"><a href="/">Home</a></li>
+							<li itemprop="itemListElement"><a href="/episodes">Episodes</a></li>
+						</ol>
+
+						<!-- ===== PAGE HEADER CONTENT ===== -->
+						<div class="page-header-content text-center">
+							<h2>{{page.title}}</h2>
+							<p>{{page.summary}}</p>
+						</div>
+
+					</div>
+				</div>
+			</header>
+
+			<!-- ===== PODCAST PLAYER ===== -->
+			<div class="podcast-player">
+				<div class="podcast-player-inner">
+					<div class="container">
+						<audio src="{{page.file}}"></audio>
+					</div>
+				</div>
+			</div>
+
+			<!-- ===== PODCAST META ===== -->
+			<div class="podcast-meta-element">
+				<span class="podcast-meta-item"><i class="fa fa-calendar"></i> {{page.date | date_to_string: "ordinal", "US"}}</span>
+				<span class="podcast-meta-item"><i class="fa fa-microphone"></i> {{page.hosts}} </span>
+				<span class="podcast-meta-item"><i class="fa fa-clock-o"></i> {{page.duration}}</span>
+				<a class="podcast-meta-item" href="{{page.file}}"><i class="fa fa-download"></i> Download (MP3)</a>
+			</div>
+
+			<!-- ===== PODCAST LINKS ===== -->
+			<!-- <div class="podcast-links">
+				<div class="container">
+					<ul class="podcast-links-list">
+						<li><a href="#" class="btn btn-success btn-sm">00:51</a> <span class="podcast-link-cite">Jump intro</span></li>
+						<li><a href="#" class="btn btn-success btn-sm">02:10</a> <a href="#" target="_blank" class="podcast-link-cite">The Envato Market</a></li>
+						<li><a href="#" class="btn btn-success btn-sm">05:25</a> <a href="#" target="_blank" class="podcast-link-cite">How to upload a Theme</a></li>
+						<li><a href="#" class="btn btn-success btn-sm">07:32</a> <span class="podcast-link-cite">A basic comment without link</span></li>
+						<li><a href="#" class="btn btn-success btn-sm">09:00</a> <a href="#" target="_blank" class="podcast-link-cite">Learning from the basics</a></li>
+						<li><a href="#" class="btn btn-success btn-sm">12:15</a> <a href="#" target="_blank" class="podcast-link-cite">http://themeforest.net/</a></li>
+					</ul>
+				</div>
+			</div> -->
+
+			<!-- ===== SINGLE PAGE CONTENT ===== -->
+			<div class="section-negative">
+				<div class="container">
+
+					<div class="row mt-70 mb-50">
+
+						<!-- ===== PODCAST TEXT CONTENT ===== -->
+						<div class="col-md-8 mb-50">
+
+							<!-- ===== PAGE MAIN CONTENT ===== -->
+							<div class="page-content">
+									{{content}}
+							</div>
+
+							<!-- ===== HR ===== -->
+							<hr />
+
+							<!-- ===== PREV AND NEXT ===== -->
+							<div class="page-pagination">
+								{% if page.previous %}
+								<!-- ===== PREV ===== -->
+								<a href="{{page.previous.url}}" class="page-pagination-prev">
+									<i class="fa fa-long-arrow-left"></i>
+									<span>{{page.previous.date | date_to_string: "ordinal", "US"}}</span>
+									<p>{{page.previous.title}}</p>
+								</a>
+								{% endif %}
+								{% if page.next %}
+								<!-- ===== NEXT ===== -->
+								<a href="{{page.next.url}}" class="page-pagination-next">
+									<i class="fa fa-long-arrow-right"></i>
+									<span>{{page.next.date | date_to_string: "ordinal", "US"}}</span>
+									<p>{{page.next.title}}</p>
+								</a>
+								{% endif %}
+							</div>
+						</div>
+
+						<!-- ===== SIDEBAR ===== -->
+						<div class="col-md-4">
+
+							<!-- ===== PODCAST SIDEBAR ===== -->
+							<div class="page-sidebar">
+
+								<!-- ===== SIDEBAR WIDGET ===== -->
+								<div class="sidebar-widget">
+									<h2 class="title-separator">Share this podcast</h2>
+									<ul class="social-list colored">
+										<li class="social-item facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li class="social-item twitter"><a href="http://twitter.com/share?text=Check out {{site.title}} {{page.title}}&url={{site.url}}{{page.url}}&hashtags=diacast,diabetes,podcast" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										<li class="social-item email"><a href="mailto:?subject={{site.title}} {{page.title}}&body=Check out {{site.title}} {{page.title}}! {{site.url}}{{page.url}}" target="_blank"><i class="fa fa-envelope"></i></a></li>
+									</ul>
+								</div>
+
+								<!-- ===== TAGS ===== -->
+								{% if page.tags == "" %}
+								<div class="sidebar-widget">
+									<h2 class="title-separator">Tags</h2>
+									<ul class="tag-list">
+										{% for tag in page.tags %}
+										<li class="tag-item"><a href="#" rel="tag">{{tag}}</a></li>
+										{% endfor %}
+									</ul>
+								</div>
+								{% endif %}
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			{% include donate.html %}
+
+			</main>
+
+			{% include footer.html %}
+
+			{% include scripts.html %}
+
+			</body>
+
+			</html>

@@ -1,0 +1,188 @@
+{% include head.html %}
+
+<body itemscope itemtype="http://schema.org/WebSite">
+
+	{% include navigation.html %}
+
+	<!-- ===== MAIN ===== -->
+	<main id="main" class="main">
+
+		<!-- ===== PAGE HEADER ===== -->
+		<header class="page-header" style="background-image: url(assets/img/single-background.jpg)">
+			<div class="page-header-inner">
+				<div class="container">
+
+					<!-- ===== BREADCRUMB ===== -->
+					<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement"><a href="/">Home</a></li>
+						<li itemprop="itemListElement"><a href="#">{{page.title}}</a></li>
+					</ol>
+
+					<!-- ===== PAGE HEADER CONTENT ===== -->
+					<div class="page-header-content text-center">
+						<h2>{{page.title}}</h2>
+						<h4>{{page.subtitle}}</h4>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<!-- ===== SECTION NEGATIVE ===== -->
+		<section class="section-negative">
+			<div class="container">
+
+				<!-- ===== PAGE CONTENT ===== -->
+				<div class="page-content">
+					<div class="row">
+						{% for platform in site.platforms %}
+						{% if platform.visible %}
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<a href="{{platform.url}}" target="_blank"><img class="platform-image" alt="subscribe on {{platform.name}}" src="/assets/img/platforms/{{platform.image}}"></img></a>
+						</div>
+						{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ===== DONATE ===== -->
+		<section id="donate" class="section-highlight text-center">
+			<div class="container">
+
+				<!-- ===== SECTION TITLE ===== -->
+				<h2 class="title-default">We need your help</h2>
+				<p class="section-description">Help us support the show!</p>
+
+				<!-- ===== DONATE VALUES ===== -->
+				<div class="row mb-50">
+
+					<div class="col-lg-12 col-md-12 mb-20">
+						<a href="https://patreon.com/diacast" class="btn btn-default btn-round btn-lg btn-block">Support us on Patreon</a>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<!-- ===== FOOTER ===== -->
+	<footer class="footer">
+
+		<!-- ===== FOOTER CONTENT INFORMATION ===== -->
+		<section class="section-positive">
+			<div class="container">
+
+				<div class="row mt-70 mb-30">
+
+					<!-- ===== SITEMAP ===== -->
+					<div class="col-sm-3 mb-40">
+						<h2 class="title-separator white">Sitemap</h2>
+						<ul class="footer-list">
+							{% for page in site.data.links %}
+							{% if page.bottomlink %}
+							<li><a href="{{page.link}}" {% if page.newtab %} target="_blank" {% endif %}>{{page.name}}</a></li>
+							{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+
+					<!-- ===== PODCASTS EPISODES ===== -->
+					<div class="col-sm-3 mb-40">
+						<h2 class="title-separator white">Lastest Episodes</h2>
+						<ul class="footer-complement">
+							{% for post in site.categories.episodes limit:3 %}
+							<li>
+								<a href="{{post.url}}">{{post.title}}</a>
+								<span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+
+					<!-- ===== PODCASTS EPISODES ===== -->
+					<div class="col-sm-3 mb-40">
+						<h2 class="title-separator">&nbsp</h2>
+						<ul class="footer-complement">
+							{% for post in site.categories.episodes offset:3 limit:3 %}
+							<li>
+								<a href="{{post.url}}">{{post.title}}</a>
+								<span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+
+					<!-- ===== SOCIAL CONNECTION ===== -->
+					<div class="col-sm-3 mb-40">
+						<h2 class="title-separator">&nbsp</h2>
+						<ul class="footer-complement">
+							{% for post in site.categories.episodes offset:6 limit:3 %}
+							<li>
+								<a href="{{post.url}}">{{post.title}}</a>
+								<span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ===== FOOTER INFORMATION ===== -->
+		<section class="footer-credits">
+			<div class="container">
+
+				<div class="row">
+
+					<!-- ===== CREDIT LOGO ===== -->
+					<div class="col-sm-6 footer-logo">
+						<h2><a href="/">{{site.title}}</a></h2>
+					</div>
+
+					<!-- ===== CREDIT LOGO ===== -->
+					<div class="col-sm-6 text-right">
+						{{site.author}} {{site.copyright}}
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</footer>
+
+	<!-- =================================== -->
+	<!-- 			  SCRIPTS 				 -->
+	<!-- =================================== -->
+
+	<!-- JQUERY -->
+	<script src="/assets/js/jquery-1.11.min.js"></script>
+
+	<!-- BOOTSTRAP JS -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+
+	<!-- MEDIA ELEMENT -->
+	<script src="/assets/js/mediaelement-and-player.min.js"></script>
+
+	<!-- MAGNIFIC POPUP -->
+	<script src="/assets/js/magnific-popup.min.js"></script>
+
+	<!-- FORM VALIDATE -->
+	<script src="/assets/js/validate.min.js"></script>
+
+	<!-- PLACEHOLDER FOR IE -->
+	<script src="/assets/js/placeholder.min.js"></script>
+
+	<!-- THEME JS -->
+	<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

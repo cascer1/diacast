@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- =================================== -->
+  <!-- 		  COMPATIBILITY 			 -->
+  <!-- =================================== -->
+
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- =================================== -->
+  <!-- 			  TITLE 			 	 -->
+  <!-- =================================== -->
+
+  {% seo %}
+
+  <!-- =================================== -->
+  <!-- 			MORDERNIZR 			 	 -->
+  <!-- =================================== -->
+
+  <script src="{{ '/assets/js/modernizr.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+  <!-- =================================== -->
+  <!-- 			  STYLES 				 -->
+  <!-- =================================== -->
+
+  <!-- BOOTSTRAP MIN -->
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!-- MEDIA ELEMENT -->
+  <link rel="stylesheet" href="{{ '/assets/css/mediaelementplayer.min.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!-- MAGNIFIC POPUP CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!-- THEME CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <link rel="stylesheet" href="{{'/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!-- GOOGLE FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- FONT AWESOME -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- =================================== -->
+  <!-- 		 	THEME COLOR 			 -->
+  <!-- =================================== -->
+
+  <meta name="theme-color" content="#fff" />
+
+  <!-- =================================== -->
+  <!-- 			CONDITIONAL 			 -->
+  <!-- =================================== -->
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- =================================== -->
+  <!-- 			 VIEWPORT 				 -->
+  <!-- =================================== -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+
+  <!-- =================================== -->
+  <!-- 			  AUTHOR 				 -->
+  <!-- =================================== -->
+
+  <meta name="author" content="{{site.author}}" />
+  <meta name="reply-to" content="{{site.email}}" />
+
+  <!-- =================================== -->
+  <!-- 			 ROBOTS 				 -->
+  <!-- =================================== -->
+
+  <meta name="GOOGLEBOT" content="INDEX, FOLLOW" />
+  <meta name="robots" content="index, follow">
+  <meta name="msnbot" content="NOODP" />
+
+  <!-- =================================== -->
+  <!-- 			 FACEBOOK 				 -->
+  <!-- =================================== -->
+
+  <meta property="og:locale" content="en" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{page.title}}" />
+  <meta property="og:description" content="{{site.description}}" />
+  <meta property="og:url" content="{{site.url}}" />
+  <meta property="og:site_name" content="{{site.title}}" />
+  <meta property="og:image" content="{{ site.url }}/images/itunes.png" />
+
+  <!-- =================================== -->
+  <!-- 			  TWITTER 				 -->
+  <!-- =================================== -->
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{site.url}}" />
+  <meta name="twitter:creator" content="@cascer1" />
+  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:description" content="{{site.description}}" />
+  <meta name="twitter:domain" content="diacast.xyz" />
+  <meta name="twitter:image" content="{{ site.url }}/images/itunes.png" />
+
+  <!-- =================================== -->
+  <!-- 			  FAVICON 				 -->
+  <!-- =================================== -->
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+  <link rel="alternate" type="application/rss+xml" title="Subscribe to the Diacast" href="{{site.url}}/podcast.rss" />
+  <script>
+    var clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(101234212);
+  </script>
+  <script async src="//static.getclicky.com/js"></script>
+
+</head>

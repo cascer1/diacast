@@ -1,0 +1,26 @@
+<!-- ===== HEADER ===== -->
+<header class="header absolute" itemscope itemtype="http://schema.org/Organization">
+  <div class="container">
+
+    <!-- ===== LOGO ===== -->
+    <!-- <h1 class="logo"><a href="{{site.url}}">{{site.title}}</a></h1> -->
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navigation">
+      <!-- ===== MENU ===== -->
+      <ul class="menu">
+        {% for link in site.data.links %}
+        {% if link.toplink %}
+        {% if link.name == page.title %}
+        <li class="menuitem active"><a href="#">{{link.name}}</a></li>
+        {% else %}
+        <li class="menuitem"><a href="{{link.link}}">{{link.name}}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <!-- ===== HAMBURGUER ICON ===== -->
+      <a href="#" class="btn-hamburguer-menu"><i class="fa fa-bars"></i></a>
+    </nav>
+  </div>
+</header>

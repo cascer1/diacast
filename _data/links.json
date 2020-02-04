@@ -1,26 +1,51 @@
 [
   {
-    "name": "Episodes",
+    "name": "Home",
     "link": "/",
     "bottomlink": true,
-    "toplink": true
+    "toplink": true,
+    "newtab": false
+  },
+  {
+    "name": "Episodes",
+    "link": "/episodes",
+    "bottomlink": true,
+    "toplink": true,
+    "newtab": false
+  },
+  {
+    "name": "Subscribe",
+    "link": "/subscribe",
+    "bottomlink": true,
+    "toplink": true,
+    "newtab": false
   },
   {
     "name": "About",
     "link": "/about",
+    "bottomlink": false,
+    "toplink": false,
+    "newtab": false
+  },
+  {
+    "name": "Discord",
+    "link": "https://discord.gg/diabetes",
     "bottomlink": true,
-    "toplink": true
+    "toplink": false,
+    "newtab": true
   },
   {
     "name": "RSS",
     "link": "/podcast.rss",
     "bottomlink": true,
-    "toplink": false
+    "toplink": false,
+    "newtab": true
   },
   {
     "name": "Patreon",
     "link": "https://patreon.com/diacast",
     "bottomlink": true,
-    "toplink": true
+    "toplink": true,
+    "newtab": true
   }
 ]

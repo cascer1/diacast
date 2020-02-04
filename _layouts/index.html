@@ -1,0 +1,135 @@
+{% include head.html %}
+
+<body itemscope itemtype="http://schema.org/WebSite">
+	{% include navigation.html %}
+
+	<!-- ===== LASTEST PODCAST (HERO) ===== -->
+	<section class="podcast-hero" style="background-image: url(assets/img/diacast/4Kbg.png)">
+		<div class="podcast-hero-inner">
+
+			<!-- ===== PODCAST INFO ===== -->
+			<div class="container">
+				<div class="podcast-hero-content">
+					<span class="podcast-hero-date">{{site.posts.first.date | date_to_string: "ordinal", "US"}}</span>
+					<h2 class="podcast-hero-title"><a href="{{site.posts.first.url}}">{{site.posts.first.title}}</a></h2>
+					<ul class="podcast-hero-meta">
+						<!-- <li class="item"><a href="#" class="podcast-hero-tag" rel="tag">Lifestyle</a></li> -->
+						<li class="item"><i class="fa fa-clock-o"></i> {{site.posts.first.duration}}</li>
+						<li class="item"><a href="{{site.posts.first.file}}" class="podcast-hero-download"><i class="fa fa-download"></i> Download</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ===== PODCAST PLAYER ===== -->
+			<div class="podcast-hero-player-content">
+				<div class="container">
+					<!-- ===== CUSTOM PLAYER ===== -->
+					<audio src="{{site.posts.first.file}}"></audio>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- ===== MAIN ===== -->
+	<main id="main" class="main">
+
+		<!-- ===== PODCAST LIST ===== -->
+		<section id="#episodes" class="section-positive">
+			<div class="container">
+
+				<!-- ===== SECTION TITLE ===== -->
+				<h2 class="title-default">Older episodes</h2>
+
+				<div class="row">
+
+					<!-- ===== PODCAST CARD FULL ===== -->
+					{% for post in site.categories.episodes offset:1 limit:1 %}
+					<div class="col-sm-12 mb-40">
+						<div class="podcast-card full">
+							<figure class="podcast-image"><a href="{{post.url}}"><img src="assets/img/diacast/thumb.png" /></a></figure>
+							<div class="podcast-content">
+								<span class="podcast-date">{{post.date | date_to_string: "ordinal", "US"}}</span>
+								<h2 class="podcast-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+								<p class="podcast-excerpt"><a href="{{post.url}}">{{post.description}}</a></p>
+								<ul class="podcast-meta">
+									<li class="item"><i class="fa fa-clock-o"></i> {{post.duration}}</li>
+									<li class="item"><a href="{{post.url}}" class="podcast-play"><i class="fa fa-play"></i> Play Episode</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+					<!-- ===== PODCAST CARD BOXED ===== -->
+					{% for post in site.categories.episodes offset:2 limit:4 %}
+					<div class="col-sm-6 mb-40">
+						<div class="podcast-card boxed">
+							<figure class="podcast-image"><a href="{{post.url}}"><img src="assets/img/diacast/thumb.png" /></a></figure>
+							<div class="podcast-content">
+								<span class="podcast-date">{{post.date | date_to_string: "ordinal", "US"}}</span>
+								<h2 class="podcast-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+								<p class="podcast-excerpt"><a href="{{post.url}}">{{post.description}}</a></p>
+								<ul class="podcast-meta">
+									<li class="item"><i class="fa fa-clock-o"></i>{{post.duration}}</li>
+									<li class="item"><a href="{{post.url}}" class="podcast-play"><i class="fa fa-play"></i> View Episode</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+					<!-- ===== CHECK MORE ===== -->
+					<div class="col-sm-12 mb-50">
+						<a href="/episodes" class="btn btn-primary btn-block btn-lg">View more episodes</a>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ===== ABOUT US ===== -->
+		<section id="about-us" class="section-negative">
+			<div class="container">
+
+				<!-- ===== SECTION TITLE ===== -->
+				<h2 class="title-default text-center">Behind the mic...</h2>
+
+				<div class="row mb-30">
+
+					<!-- ===== TEAM CARD ===== -->
+					{% for member in site.people %}
+					<div class="col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-12 mb-40">
+						<div class="team-card">
+							<!-- <figure class="team-card-image"><img src="assets/img/team/team-1.jpg" alt="John Doe" title="John Doe" /></figure> -->
+							<div class="team-card-content">
+								<h2 class="team-card-title">{{member.name}}</h2>
+								<p class="team-card-job">{{member.job}}</p>
+								<p class="team-card-description">{{member.content | markdownify}}</p>
+								<ul class="team-card-social">
+									{% for device in member.devices %}
+									<li class="social-item">{{device}}</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+
+				</div>
+
+			</div>
+		</section>
+
+		{% include donate.html %}
+
+	</main>
+
+	{% include footer.html %}
+
+	{% include scripts.html %}
+
+</body>
+
+</html>

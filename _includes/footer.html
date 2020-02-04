@@ -1,0 +1,87 @@
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <!-- ===== FOOTER CONTENT INFORMATION ===== -->
+  <section class="section-positive">
+    <div class="container">
+
+      <div class="row mt-70 mb-30">
+
+        <!-- ===== SITEMAP ===== -->
+        <div class="col-sm-3 mb-40">
+          <h2 class="title-separator white">Sitemap</h2>
+          <ul class="footer-list">
+            {% for page in site.data.links %}
+            {% if page.bottomlink %}
+            <li><a href="{{page.link}}" {% if page.newtab %} target="_blank" {% endif %} >{{page.name}}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- ===== PODCASTS EPISODES ===== -->
+        <div class="col-sm-3 mb-40">
+          <h2 class="title-separator white">Lastest Episodes</h2>
+          <ul class="footer-complement">
+            {% for post in site.categories.episodes limit:3 %}
+            <li>
+              <a href="{{post.url}}">{{post.title}}</a>
+              <span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- ===== PODCASTS EPISODES ===== -->
+        <div class="col-sm-3 mb-40">
+          <h2 class="title-separator">&nbsp</h2>
+          <ul class="footer-complement">
+            {% for post in site.categories.episodes offset:3 limit:3 %}
+            <li>
+              <a href="{{post.url}}">{{post.title}}</a>
+              <span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- ===== SOCIAL CONNECTION ===== -->
+        <div class="col-sm-3 mb-40">
+          <h2 class="title-separator">&nbsp</h2>
+          <ul class="footer-complement">
+            {% for post in site.categories.episodes offset:6 limit:3 %}
+            <li>
+              <a href="{{post.url}}">{{post.title}}</a>
+              <span>{{post.date | date_to_string: "ordinal", "US" }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER INFORMATION ===== -->
+  <section class="footer-credits">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- ===== CREDIT LOGO ===== -->
+        <div class="col-sm-6 footer-logo">
+          <h2><a href="/">{{site.title}}</a></h2>
+        </div>
+
+        <!-- ===== CREDIT LOGO ===== -->
+        <div class="col-sm-6 text-right">
+          {{site.author}} {{site.copyright}}
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</footer>

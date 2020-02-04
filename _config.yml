@@ -13,6 +13,7 @@ copyright:      "&#x2117; &amp; &#xA9; 2020"
 
 collections:
   - people
+  - platforms
 
 defaults:
   -
@@ -20,7 +21,8 @@ defaults:
       path: "_posts/episodes"
       type: "posts"
     values:
-      layout: "post"
+      layout: "episode"
+      hosts: "Adi, Brent, and Cas"
       author: "Cas Eliëns"
       excerpt_separator: <!--more-->
       explicit: "no"
