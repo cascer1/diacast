@@ -70,7 +70,7 @@ video {
 a {
 	text-decoration: none;
 	border: 0;
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 a:hover,
@@ -308,8 +308,8 @@ li {
 }
 
 .btn-success {
-	background: #2ecc71;
-	border: #2ecc71;
+	background: #5c89c7;
+	border: #5c89c7;
 }
 
 .btn-success:hover,
@@ -411,8 +411,8 @@ li {
 }
 
 .label-success {
-	background: #2ecc71;
-	border: #2ecc71;
+	background: #5c89c7;
+	border: #5c89c7;
 }
 
 .label-primary {
@@ -449,7 +449,7 @@ li {
 /* ========================= */
 
 .section-highlight {
-	background: #2ecc71;
+	background: #5c89c7;
 	color: #fff;
 }
 
@@ -641,7 +641,7 @@ li {
 
 .social-list a:hover,
 .social-list a:focus {
-	background: #2ecc71;
+	background: #5c89c7;
 }
 
 /* ========================= */
@@ -673,7 +673,7 @@ li {
 .tag-list a {
 	display: block;
 	padding: 5px 8px;
-	background: #2ecc71;
+	background: #5c89c7;
 	color: #f1f1f1;
 }
 
@@ -820,7 +820,7 @@ li {
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-current {
-	background: #2ecc71;
+	background: #5c89c7;
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
@@ -847,7 +847,7 @@ li {
 }
 
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
-	background: #2ecc71;
+	background: #5c89c7;
 }
 
 /* ========================= */
@@ -1046,7 +1046,7 @@ form .form-callback p {
 }
 
 form .form-callback.success {
-	background: #2ecc71;
+	background: #5c89c7;
 	border-color: #2abb68;
 }
 
@@ -1116,7 +1116,7 @@ form .form-callback.error {
 
 .pagination > li > a,
 .pagination > li > span {
-	color: #2ecc71;
+	color: #5c89c7;
 	background: #24202e;
 	border-color: #2d283a;
 }
@@ -1125,7 +1125,7 @@ form .form-callback.error {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 	background: #2d283a;
 	border-color: #2d283a;
 }
@@ -1349,7 +1349,7 @@ form .form-callback.error {
 }
 
 .text-success {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 .text-primary {
@@ -1486,11 +1486,11 @@ form .form-callback.error {
 
 .btn-hamburguer-menu:hover,
 .btn-hamburguer-menu:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 .btn-hamburguer-menu.active {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 /* ========================= */
@@ -1549,7 +1549,7 @@ form .form-callback.error {
 
 .footer-complement a:hover,
 .footer-complement a:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 .footer-complement span {
@@ -1686,7 +1686,7 @@ form .form-callback.error {
 	font-size: 16px;
 	font-size: 1.6rem;
 	list-style: none;
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 .podcast-hero .podcast-hero-content .podcast-hero-meta .item + .item:before {
@@ -1747,7 +1747,7 @@ form .form-callback.error {
 	width: 50px;
 	height: 50px;
 	background: #fff;
-	color: #2ecc71;
+	color: #5c89c7;
 	text-align: center;
 	line-height: 51px;
 	text-indent: 5px;
@@ -1765,7 +1765,7 @@ form .form-callback.error {
 
 .podcast-card .podcast-image a:hover:before,
 .podcast-card .podcast-image a:focus:before {
-	background: #2ecc71;
+	background: #5c89c7;
 	color: #fff;
 }
 
@@ -1811,7 +1811,7 @@ form .form-callback.error {
 	vertical-align: middle;
 	zoom: 1;
 	*display: inline;
-	color: #2ecc71;
+	color: #5c89c7;
 	list-style: none;
 }
 
@@ -2195,7 +2195,7 @@ form .form-callback.error {
 
 .podcast-meta-element a.podcast-meta-item:hover,
 .podcast-meta-element a.podcast-meta-item:focus {
-	background: #2ecc71;
+	background: #5c89c7;
 }
 
 /* ========================= */
@@ -2234,7 +2234,7 @@ form .form-callback.error {
 
 .podcast-links a.podcast-link-cite:hover,
 .podcast-links a.podcast-link-cite:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 /* ========================= */
@@ -2529,7 +2529,7 @@ form .form-callback.error {
 
 .menu .menuitem > a:hover,
 .menu .menuitem > a:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 	text-decoration: none;
 }
 
@@ -2545,7 +2545,7 @@ form .form-callback.error {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background: #2ecc71;
+	background: #5c89c7;
 	-webkit-transition: all 0.2s ease-out;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
@@ -2602,7 +2602,7 @@ form .form-callback.error {
 }
 
 .menu .menuitem.active > a {
-	color: #2ecc71;
+	color: #5c89c7;
 }
 
 .menu .menuitem.dropdown > a:after {
@@ -2617,7 +2617,7 @@ form .form-callback.error {
 
 .menu .menuitem > a:hover,
 .menu .menuitem > a:focus {
-	color: #2ecc71;
+	color: #5c89c7;
 	text-decoration: none;
 }
 
