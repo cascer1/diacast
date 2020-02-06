@@ -10,6 +10,7 @@ url:            "https://www.diacast.xyz"
 lang:           en-US
 author:         "Cas Eliëns"
 copyright:      "&#x2117; &amp; &#xA9; 2020"
+keywords:       "diabetes,diacast,insulin,kaleido,medtronic,omnipod,dexcom,openaps,androidaps,xdrip,nightscout"
 
 collections:
   - people
