@@ -44,8 +44,8 @@
   {
     "name": "Patreon",
     "link": "https://patreon.com/diacast",
-    "bottomlink": true,
-    "toplink": true,
+    "bottomlink": false,
+    "toplink": false,
     "newtab": true
   }
 ]
