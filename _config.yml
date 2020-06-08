@@ -2,11 +2,11 @@ theme: jekyll-theme-cayman
 
 # Podcast Feed Settings
 title:          Diacast
-email:          hello@diacast.xyz
+email:          diacast@cascer1.space
 subtitle:       "A podcast about diabetes"
 description:    "Diacast is a podcast about diabetes, in the widest sense of the word. We talk about technology, recipes, daily life, success stories, and a whole lot more. Sometimes we wander off to subjects that are unrelated to diabetes, too."
 subtitle:       "A podcast about diabetes"
-url:            "https://www.diacast.xyz"
+url:            "https://cas.eliens.co/diacast"
 lang:           en-US
 author:         "Cas Eliëns"
 copyright:      "&#x2117; &amp; &#xA9; 2020"
